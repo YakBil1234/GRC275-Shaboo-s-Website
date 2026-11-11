@@ -1,0 +1,565 @@
+/* Header Background */
+.custom-header {
+  background: linear-gradient(180deg, #f59a94 0%, #f7b2ad 100%);
+}
+
+/* Avatar circle container */
+.logo-wrapper {
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brand-title {
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+}
+
+/* Social icons styling */
+.social-links a {
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+/* Floating pill menu */
+.custom-nav-pill {
+  background-color: rgba(189, 87, 85, 0.85); /* Darker reddish-pink */
+  border-radius: 40px;
+  padding: 10px 24px;
+}
+
+.custom-nav-pill .nav-link {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  padding: 0 15px;
+  transition: opacity 0.2s;
+}
+
+.custom-nav-pill .nav-link:hover {
+  opacity: 0.8;
+}
+
+.logo-wrapper {
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden; /* Clips any part of the image outside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps proportions intact and fills the container */
+}
+
+.logo-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #ffd1dc;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover feedback */
+.logo-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.logo-wrapper img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+
+
+.social-links {
+  gap: 8px; /* Spaces out the circular buttons evenly */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #000000; /* Solid black circle from wireframe */
+  color: #ffffff;            /* White icon inside */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  background-color: #ffffff;
+}
+
+/* Big Headline Typography */
+.hero-title {
+  color: #723236; /* Dark reddish-brown tone from XD design */
+  font-size: 3.25rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+/* Sub-heading text */
+.hero-subtitle {
+  color: #e06d67; /* Softer coral/pink tone */
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+
+/* Rounded Video Container */
+.hero-video-wrapper {
+  position: relative;
+  border-radius: 28px; /* Smooth rounded corners matching the wireframe */
+  overflow: hidden;    /* Clips video edges to the rounded border */
+  aspect-ratio: 16 / 9; /* Maintains video aspect ratio */
+  background-color: #000;
+}
+
+.hero-video-wrapper video {
+  display: block;
+  object-fit: cover; /* Fills container cleanly without distortion */
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  width: 100%;
+  background-color: #ffffff; /* Solid white background spanning 100% of viewport */
+  margin: 0;
+  padding: 0;
+}
+
+/* SERVICES */
+
+/* Container & Section */
+.services-section {
+  background-color: #595959; /* Matching dark grey background */
+  position: relative;
+  overflow-x: hidden; /* Clips the pills sticking off the screen */
+  padding-bottom: 60px;
+}
+
+.services-container {
+  position: relative;
+}
+
+/* 1. Services Tab pinned to the left edge */
+.services-tab-anchor {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+.services-badge {
+  display: inline-block;
+  background-color: #424242;
+  color: #ffffff;
+  padding: 10px 48px 10px 32px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 0;
+}
+
+/* 2. Pills: 25% Hidden Off-Screen */
+.service-row-group {
+  margin-bottom: 12px;
+}
+
+.service-pill-btn {
+  display: block;
+  width: 520px; /* Fixed proportional length */
+  background: linear-gradient(180deg, #d3615b 0%, #aa3938 100%);
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  /* Hides roughly 25% of the pill off the left edge */
+  transform: translateX(-25%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 0.3s ease;
+}
+
+/* Hover: Slides out towards the right */
+.service-pill-btn:hover {
+  transform: translateX(-5%); /* Slides out almost fully */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.55);
+}
+
+.service-pill-btn:focus {
+  outline: none;
+}
+
+/* 3. Expanded Drawer Styling */
+.service-drawer-wrapper {
+  background-color: #ffffff;
+  border-radius: 0;
+  margin: 20px 0;
+  padding: 40px 5%;
+  width: 100%;
+}
+
+.service-drawer-title-pill {
+  background: linear-gradient(180deg, #d3615b 0%, #aa3938 100%);
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 8px 60px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.packages-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+/* 4. Package Cards */
+.package-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.package-header {
+  background-color: #383838;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.package-img-box {
+  width: 100%;
+  height: 220px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.package-img-box img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.package-desc {
+  font-size: 0.85rem;
+  color: #4f4f4f;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  min-height: 48px;
+}
+
+/* Light Mint Green "PROCEED" Button */
+.btn-proceed {
+  background-color: #e5fbe9;
+  color: #1e4526;
+  border: 1px solid #c9efce;
+  border-radius: 25px;
+  padding: 8px 38px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-proceed:hover {
+  background-color: #c7f4cf;
+  color: #123018;
+  text-decoration: none;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 576px) {
+  .service-pill-btn {
+    width: 90%;
+    transform: translateX(-15%);
+  }
+  .service-pill-btn:hover {
+    transform: translateX(0);
+  }
+}
+
+/* Container & Section */
+.services-section {
+  background-color: #595959; /* Matching dark grey background */
+  position: relative;
+  overflow-x: hidden; /* Clips the pills sticking off the screen */
+  padding-bottom: 60px;
+}
+
+.services-container {
+  position: relative;
+}
+
+/* 1. Services Tab pinned to the left edge */
+.services-tab-anchor {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+.services-badge {
+  display: inline-block;
+  background-color: #424242;
+  color: #ffffff;
+  padding: 10px 48px 10px 32px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 0;
+}
+
+/* 2. Pills: 25% Hidden Off-Screen */
+.service-row-group {
+  margin-bottom: 12px;
+}
+
+.service-pill-btn {
+  display: block;
+  width: 520px; /* Fixed proportional length */
+  background: linear-gradient(180deg, #d3615b 0%, #aa3938 100%);
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  /* Hides roughly 25% of the pill off the left edge */
+  transform: translateX(-25%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 0.3s ease;
+}
+
+/* Hover: Slides out towards the right */
+.service-pill-btn:hover {
+  transform: translateX(-5%); /* Slides out almost fully */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.55);
+}
+
+.service-pill-btn:focus {
+  outline: none;
+}
+
+/* 3. Expanded Drawer Styling */
+.service-drawer-wrapper {
+  background-color: #ffffff;
+  border-radius: 0;
+  margin: 20px 0;
+  padding: 40px 5%;
+  width: 100%;
+}
+
+.service-drawer-title-pill {
+  background: linear-gradient(180deg, #d3615b 0%, #aa3938 100%);
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 8px 60px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.packages-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+/* 4. Package Cards */
+.package-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.package-header {
+  background-color: #383838;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.package-img-box {
+  width: 100%;
+  height: 220px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.package-img-box img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.package-desc {
+  font-size: 0.85rem;
+  color: #4f4f4f;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  min-height: 48px;
+}
+
+/* Light Mint Green "PROCEED" Button */
+.btn-proceed {
+  background-color: #e5fbe9;
+  color: #1e4526;
+  border: 1px solid #c9efce;
+  border-radius: 25px;
+  padding: 8px 38px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-proceed:hover {
+  background-color: #c7f4cf;
+  color: #123018;
+  text-decoration: none;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 576px) {
+  .service-pill-btn {
+    width: 90%;
+    transform: translateX(-15%);
+  }
+  .service-pill-btn:hover {
+    transform: translateX(0);
+  }
+}
+
+
+/* Footer Container */
+.site-footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* 1. Upper Medium-Grey Band */
+.footer-top-tier {
+  background-color: #4a4a4a; /* Medium charcoal grey */
+  width: 100%;
+  height: 140px;             /* Height matching the wireframe proportion */
+}
+
+/* 2. Lower Dark-Grey Copyright Strip */
+.footer-bottom-tier {
+  background-color: #242424; /* Deep dark charcoal/near-black */
+  width: 100%;
+}
+
+/* Copyright Text */
+.copyright-text {
+  color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  opacity: 0.9;
+}

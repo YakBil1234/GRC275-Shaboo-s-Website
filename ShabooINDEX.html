@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    
+<!-- 1. Bootstrap loads all of its styles into memory -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!--javascript-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<!--Mystyle.css-->    
+  <link rel="stylesheet" href="mystyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+
+
+<header class="custom-header py-3">
+  <div class="container-fluid px-4">
+    <!-- Top Utility Row: Avatar, Center Title, Social Icons -->
+    <div class="row align-items-center mb-3">
+      <!-- Left: Circular Avatar / Logo -->
+     <div class="col-4 d-flex align-items-center">
+  <!-- Wrap in an <a> tag linking to your home page -->
+  <a href="index.html" class="logo-wrapper text-decoration-none">
+    <img src="C:\Users\yakub\Desktop\GRC275\CODE\shaboo Website\IMAGES\IMAGES USED\shaboo's logo transparent .png" alt="Shaboo's Services Logo" class="img-fluid rounded-circle">
+  </a>
+</div>
+
+
+
+      <!-- Center: Site Brand / Title -->
+      <div class="col-4 text-center">
+        <span class="brand-title text-white font-weight-bold">SHABOO'S SERVICES</span>
+      </div>
+
+<!-- Right: Social Media Icons -->
+      <div class="col-4 text-right social-links">
+      <!-- Instagram -->
+  <a href="https://instagram.com" class="social-icon">
+  <img src="C:\Users\yakub\Desktop\GRC275\CODE\shaboo Website\IMAGES\OPTIMIZED IMAGES\instagram.png" alt="Instagram" width="16" height="16">
+</a>
+
+  <!-- TikTok -->
+  <a href="https://tiktok.com" class="social-icon">
+  <img src="C:\Users\yakub\Desktop\GRC275\CODE\shaboo Website\IMAGES\OPTIMIZED IMAGES\tiktok.png" alt="TikTok" width="16" height="16">
+</a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com" class="social-icon">
+  <img src="C:\Users\yakub\Desktop\GRC275\CODE\shaboo Website\IMAGES\OPTIMIZED IMAGES\youtube.png" alt="YouTube" width="16" height="16">
+</a>
+
+  <!-- Facebook -->
+  <a href="https://facebook.com" class="social-icon">
+  <img src="C:\Users\yakub\Desktop\GRC275\CODE\shaboo Website\IMAGES\OPTIMIZED IMAGES\facebook.png" alt="Facebook" width="16" height="16">
+</a>
+      </div>
+
+
+
+<!-- Bottom Row: Centered Rounded Pill Nav Menu -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9 col-lg-8">
+        <nav class="navbar navbar-expand navbar-dark custom-nav-pill shadow">
+          <ul class="navbar-nav w-100 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="#faq">FaQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</head>
+
+
+
+<body>
+ <!-- Hero / Headline Section -->
+<section class="hero-section py-5">
+ <div class="row no-gutters align-items-center">
+    <div class="row align-items-center">
+      <!-- Left Column: Typography & Subtitle -->
+      <div class="col-12 col-md-5 mb-4 mb-md-0">
+        <h1 class="hero-title text-uppercase font-weight-bold mb-3">
+          Ideas<br>
+          Brought<br>
+          To Life.
+        </h1>
+        <p class="hero-subtitle text-uppercase font-weight-bold mb-0">
+          Through Hand Drawn Animation
+        </p>
+      </div>
+
+      <!-- Right Column: Video with Rounded Corners & Shadow -->
+      <div class="col-12 col-md-7">
+        <div class="hero-video-wrapper shadow-lg">
+          <video autoplay loop muted playsinline class="w-100 h-100">
+            <source src="Videos used/The+type+of+move+your+older+siblings+hit+you+with.mp4" type="video/mp4">
+        
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES  -->
+
+<section class="services-section">
+  <!-- Container is strictly px-0 with overflow hidden to prevent horizontal scrollbars -->
+  <div class="container-fluid px-0 services-container">
+    
+    <!-- Pinned Services Tab -->
+    <div class="services-tab-anchor">
+      <div class="services-badge">
+        <span>Services</span>
+      </div>
+    </div>
+
+    <!-- Accordion Wrapper -->
+    <div class="accordion" id="servicesAccordion">
+
+      <!-- ================= 1. ANIMATION ================= -->
+      <div class="service-row-group">
+        <button class="service-pill-btn" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseAnimation" 
+                aria-expanded="false" 
+                aria-controls="collapseAnimation">
+          Animation
+        </button>
+
+        <div id="collapseAnimation" class="collapse" data-parent="#servicesAccordion">
+          <div class="service-drawer-wrapper">
+            <div class="text-center mb-4">
+              <span class="service-drawer-title-pill">Animation</span>
+              <h3 class="packages-heading">PACKAGES</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">1-15 Second Animation</div>
+                  <div class="package-img-box"><img src="images/yahiko-red.png" alt="1-15s" class="img-fluid"></div>
+                  <p class="package-desc">1-15 second animation at either 6-12 Frames Per Second. Best for short videos.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">15-30 Second Animation</div>
+                  <div class="package-img-box"><img src="images/yahiko-bw.png" alt="15-30s" class="img-fluid"></div>
+                  <p class="package-desc">15-30 second animation at either 6-12 Frames Per Second. Best for Intro's, Shorts, Clips.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">45 - 2 Minutes Animation</div>
+                  <div class="package-img-box"><img src="images/yahiko-color.png" alt="45-2m" class="img-fluid"></div>
+                  <p class="package-desc">45 - 2 Minutes animation at either 6-12 Frames Per Second. Best for Intro's, Shorts, Clips, Stories, promotions.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 2. VIDEO EDITING ================= -->
+      <div class="service-row-group">
+        <button class="service-pill-btn" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseEditing" 
+                aria-expanded="false" 
+                aria-controls="collapseEditing">
+          Video Editing
+        </button>
+
+        <div id="collapseEditing" class="collapse" data-parent="#servicesAccordion">
+          <div class="service-drawer-wrapper">
+            <div class="text-center mb-4">
+              <span class="service-drawer-title-pill">Video Editing</span>
+              <h3 class="packages-heading">PACKAGES</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">30 Second Edit</div>
+                  <div class="package-img-box"><img src="images/yahiko-red.png" alt="30s Edit" class="img-fluid"></div>
+                  <p class="package-desc">30 second edit. Best for Intros, Short Videos.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">1-3 Minute Edit</div>
+                  <div class="package-img-box"><img src="images/yahiko-bw.png" alt="1-3m Edit" class="img-fluid"></div>
+                  <p class="package-desc">1-3 Minute edit. Best for videos, adverts, and explanation.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">4-10 Minutes Video</div>
+                  <div class="package-img-box"><img src="images/yahiko-color.png" alt="4-10m Edit" class="img-fluid"></div>
+                  <p class="package-desc">4-10 minute, Best for Long Form Video.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 3. GRAPHIC DESIGN ================= -->
+      <div class="service-row-group">
+        <button class="service-pill-btn" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseDesign" 
+                aria-expanded="false" 
+                aria-controls="collapseDesign">
+          Graphic Design
+        </button>
+
+        <div id="collapseDesign" class="collapse" data-parent="#servicesAccordion">
+          <div class="service-drawer-wrapper">
+            <div class="text-center mb-4">
+              <span class="service-drawer-title-pill">Graphic Design</span>
+              <h3 class="packages-heading">PACKAGES</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Thumbnails & Banners</div>
+                  <div class="package-img-box"><img src="images/yahiko-red.png" alt="Thumbnails" class="img-fluid"></div>
+                  <p class="package-desc">High CTR YouTube thumbnails, channel headers, and social promo assets.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Logo & Brand Identity</div>
+                  <div class="package-img-box"><img src="images/yahiko-bw.png" alt="Brand Identity" class="img-fluid"></div>
+                  <p class="package-desc">Custom mascot/character logos, typography lockups, and vector marks.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Full Merch & Print Suite</div>
+                  <div class="package-img-box"><img src="images/yahiko-color.png" alt="Print" class="img-fluid"></div>
+                  <p class="package-desc">Apparel separation prints, poster layouts, and production-ready vector files.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 4. AUDIO ENGINEERING ================= -->
+      <div class="service-row-group">
+        <button class="service-pill-btn" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#collapseAudio" 
+                aria-expanded="false" 
+                aria-controls="collapseAudio">
+          Audio Egineering
+        </button>
+
+        <div id="collapseAudio" class="collapse" data-parent="#servicesAccordion">
+          <div class="service-drawer-wrapper">
+            <div class="text-center mb-4">
+              <span class="service-drawer-title-pill">Audio Egineering</span>
+              <h3 class="packages-heading">PACKAGES</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Dialogue Cleanup & Tuning</div>
+                  <div class="package-img-box"><img src="images/yahiko-red.png" alt="Dialogue" class="img-fluid"></div>
+                  <p class="package-desc">Noise removal, de-essing, EQ, and dynamics compression for voice tracks.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Sound Design & Foley</div>
+                  <div class="package-img-box"><img src="images/yahiko-bw.png" alt="SFX" class="img-fluid"></div>
+                  <p class="package-desc">Custom impact sounds, anime-style whooshes, ambient layers, and scene foley.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <div class="package-card">
+                  <div class="package-header">Full Mix & Mastering</div>
+                  <div class="package-img-box"><img src="images/yahiko-color.png" alt="Mastering" class="img-fluid"></div>
+                  <p class="package-desc">Full stem balancing, YouTube LUFS volume mastering, and stereo spatial imaging.</p>
+                  <a href="#contact" class="btn btn-proceed">PROCEED</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+
+<!-- Two-Tier Full-Width Footer -->
+<footer class="site-footer">
+  <!-- Top Medium Grey Tier -->
+  <div class="footer-top-tier"></div>
+
+  <!-- Bottom Dark Grey Copyright Tier -->
+  <div class="footer-bottom-tier py-4">
+    <div class="container-fluid text-center">
+      <p class="copyright-text mb-0">ShaBoo Copyright 2026</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</html>
